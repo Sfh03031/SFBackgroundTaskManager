@@ -1,0 +1,6 @@
+framework module Pods_SFBackgroundTaskManager_Example {
+  umbrella header "Pods-SFBackgroundTaskManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_SFBackgroundTaskManager_Tests {
+  umbrella header "Pods-SFBackgroundTaskManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

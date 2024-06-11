@@ -32,9 +32,10 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'SFBackgroundTaskManager/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SFBackgroundTaskManager' => ['SFBackgroundTaskManager/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'SFBackgroundTaskManager' => ['SFBackgroundTaskManager/Assets/*.wav']
+  }
+  s.static_framework = true
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
