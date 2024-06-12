@@ -29,7 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 
-        SFBackgroundTaskManager.shared.sta
+        
+        // 默认，保活时长2小时，自动停止
+        SFBackgroundTaskManager.shared.start()
+        // 自定义时长，保活时长10小时，自动停止
+//        SFBackgroundTaskManager.shared.start(10)
+        // 自定义时长，保活时长8小时，自动停止
+//        SFBackgroundTaskManager.shared.start(8, isAutoStop: true)
+        // 一直保活，长时间会消耗设备大量电量，请自行评估风险
+//        SFBackgroundTaskManager.shared.start(isAutoStop: false)
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

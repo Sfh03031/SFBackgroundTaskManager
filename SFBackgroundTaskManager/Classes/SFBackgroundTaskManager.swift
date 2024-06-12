@@ -15,9 +15,10 @@ import AVFoundation
 /// 原理: 
 /// 申请时间(系统限制一般为30秒)执行一段后台任务(播放无声音乐)并返回任务id，任务结束回调中必须结束该后台任务，否则系统会杀死App。
 /// 在结束回调中再次申请时间执行一段后台任务，系统会开始新的申请，重复此过程以达到保活的目的。
+///
 /// 注意：
 /// 1.被挂起的程序，在系统资源不够的时候也会被杀死
-/// 2.如果应用退到后台长时间不被杀死，长时间静默播放无声音频会累积消耗大量的设备电量，用户发现后会对应用造成不好印象
+/// 2.如果应用退到后台长时间不被杀死，长时间静默播放无声音频会累积消耗大量的设备电量，风险自行评估
 
 public class SFBackgroundTaskManager: NSObject {
     
@@ -78,7 +79,9 @@ public class SFBackgroundTaskManager: NSObject {
     
     /// 申请后台任务
     fileprivate func applyForBackgroundTask() {
+#if DEBUG
         print("UIApplication.shared.backgroundTimeRemaining: \(UIApplication.shared.backgroundTimeRemaining)")
+#endif
         self.bgTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {
             if self.bgTask != UIBackgroundTaskInvalid {
                 UIApplication.shared.endBackgroundTask(self.bgTask)

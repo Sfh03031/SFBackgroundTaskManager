@@ -1,6 +1,6 @@
 # SFBackgroundTaskManager
 
-[![CI Status](https://img.shields.io/travis/SparkeXHApp/SFBackgroundTaskManager.svg?style=flat)](https://travis-ci.org/SparkeXHApp/SFBackgroundTaskManager)
+[![CI Status](https://img.shields.io/travis/Sfh03031/SFBackgroundTaskManager.svg?style=flat)](https://travis-ci.org/Sfh03031/SFBackgroundTaskManager)
 [![Version](https://img.shields.io/cocoapods/v/SFBackgroundTaskManager.svg?style=flat)](https://cocoapods.org/pods/SFBackgroundTaskManager)
 [![License](https://img.shields.io/cocoapods/l/SFBackgroundTaskManager.svg?style=flat)](https://cocoapods.org/pods/SFBackgroundTaskManager)
 [![Platform](https://img.shields.io/cocoapods/p/SFBackgroundTaskManager.svg?style=flat)](https://cocoapods.org/pods/SFBackgroundTaskManager)
@@ -17,12 +17,12 @@ SFBackgroundTaskManager is available through [CocoaPods](https://cocoapods.org).
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SFBackgroundTaskManager'
+pod 'SFBackgroundTaskManager', :git => 'https://github.com/Sfh03031/SFBackgroundTaskManager.git'
 ```
 
 ## Author
 
-SparkeXHApp, sfhery@foxmail.com
+  Sfh03031, sfh894645252@163.com
 
 ## License
 
